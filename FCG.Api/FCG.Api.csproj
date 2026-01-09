@@ -20,4 +20,8 @@
     <ProjectReference Include="..\FCG.Infrastructure\FCG.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Mappers\Interfaces\" />
+  </ItemGroup>
+
 </Project>

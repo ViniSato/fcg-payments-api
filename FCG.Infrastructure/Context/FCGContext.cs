@@ -13,16 +13,10 @@ namespace FCG.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            UsuarioMap.Map(modelBuilder);
-            JogoMap.Map(modelBuilder);
-            JogoUsuarioMap.Map(modelBuilder);
-            PromocaoMap.Map(modelBuilder);
+            TransactionMap.Map(modelBuilder);
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Usuario> Usuario { get; set; }
-        public DbSet<Jogo> Jogo { get; set; }
-        public DbSet<JogoUsuario> JogoUsuario { get; set; }
-        public DbSet<Promocao> Promocao { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
     }
 }

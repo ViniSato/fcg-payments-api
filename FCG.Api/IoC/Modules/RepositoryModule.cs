@@ -7,9 +7,7 @@ namespace FCG.Api.IoC.Modules
     {
         public static void InjectDependencies(IServiceCollection services)
         {
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
-            services.AddTransient<IJogoRepository, JogoRepository>();
-            services.AddTransient<IPromocaoRepository, PromocaoRepository>();
+            services.AddTransient<ITransactionRepository, TransactionRepository>();
             services.AddTransient<ILogRepository, MongoLogRepository>();
         }
     }
